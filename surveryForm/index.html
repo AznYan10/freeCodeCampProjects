@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this short survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter your name:
+          <input id="name" name="name" type="text" placeholder="Name" required>
+        </label>
+        <label id="email-label">Enter your email:
+          <input id="email" type="email" placeholder="Email" required>
+        </label>
+        <label id="number-label">Enter your age:
+          <input id="number" type="number" placeholder="age" min="18" max="120">
+          </label>
+        </fieldset>
+        <fieldset>
+          <label id="dropbox-label">Pizza or Burger?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Pizza</option>
+              <option value="2">Burger</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label id="radio-choice">Preffered Drink
+            <input name="choice" id="choice1" type="radio" value="1">Pepsi
+            <input name="choice" id="choice2" type="radio" value="2">Coke
+            <input name="choice" id="choice3" type="radio" value="3">Sweet Tea
+          </label>
+          <p></p>
+          <label id="checkbox-label">Side to go with meal
+            <input value="1" type="checkbox">Fries
+            <input value="2" type="checkbox">Onion Rings
+            <input value="3" type="checkbox">Hush Puppies
+            <input value="4" type="checkbox">Curly Fries
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="comment" id="comment-lable">Comment
+            <textarea id="comment" name="comment" rows="3" cols="30" placeholder="additional comment"></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
